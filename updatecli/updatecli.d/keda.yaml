@@ -1,0 +1,65 @@
+sources:
+  lastRelease:
+    kind: helmchart
+    spec:
+      url: 'https://kedacore.github.io/charts'
+      name: 'keda'
+
+targets:
+  chart:
+    name: bump chart version
+    kind: yaml
+    scmid: github
+    spec:
+      file: 'keda/kustomization.yaml'
+      key: '$.helmCharts[0].version'
+    transformers:
+    - addprefix: "'"
+    - addsuffix: "'"
+  module_version:
+    name: bump module version
+    kind: hcl
+    scmid: github
+    spec:
+      file: 'outputs.tf'
+      path: 'locals.version'
+    transformers:
+    - trimprefix: "v"
+  kubectl:
+    name: run kubectl when chart changed
+    kind: shell
+    scmid: github
+    dependson:
+    - chart
+    - module_version
+    dependsonchange: true
+    disablesourceinput: true
+    spec:
+      command: "rm -rf keda/charts && kubectl kustomize . -o keda.yaml --enable-helm && git diff --shortstat keda.yaml"
+      environments:
+      - name: PATH
+
+scms:
+  github:
+    kind: "github"
+    spec:
+      user: "argoyle"
+      email: "updatecli@opzkit.io"
+      owner: "opzkit"
+      repository: "terraform-aws-k8s-addons-keda"
+      token: '{{ requiredEnv "UPDATECLI_GITHUB_TOKEN" }}'
+      username: 'UpdateCLI'
+      branch: "main"
+      commitusingapi: true
+
+# Define action configurations if one needs to be created
+actions:
+  addon:
+    kind: "github/pullrequest"
+    scmid: "github"
+    spec:
+      automerge: true
+      draft: false
+      labels:
+      - "dependencies"
+      title: "Update KEDA version"
