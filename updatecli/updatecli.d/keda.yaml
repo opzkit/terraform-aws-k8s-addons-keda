@@ -30,12 +30,17 @@ targets:
     kind: shell
     scmid: github
     dependson:
-    - chart
-    - module_version
+    - "chart:or"
+    - "module_version:or"
     dependsonchange: true
     disablesourceinput: true
     spec:
-      command: "rm -rf keda/charts && kubectl kustomize . -o keda.yaml --enable-helm && git diff --shortstat keda.yaml"
+      command: "rm -rf keda/charts && kubectl kustomize . -o keda.yaml --enable-helm"
+      changedif:
+        kind: file/checksum
+        spec:
+          files:
+          - keda.yaml
       environments:
       - name: PATH
 
