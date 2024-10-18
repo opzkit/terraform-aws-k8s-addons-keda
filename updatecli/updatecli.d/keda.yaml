@@ -30,10 +30,9 @@ targets:
     kind: shell
     scmid: github
     dependson:
-    - "chart:or"
-    - "module_version:or"
-    dependsonchange: false
-    disablesourceinput: false
+    - "chart"
+    dependsonchange: true
+    disablesourceinput: true
     spec:
       command: "rm -rf keda/charts && kubectl kustomize . -o keda.yaml --enable-helm"
       changedif:
