@@ -32,8 +32,8 @@ targets:
     dependson:
     - "chart:or"
     - "module_version:or"
-    dependsonchange: true
-    disablesourceinput: true
+    dependsonchange: false
+    disablesourceinput: false
     spec:
       command: "rm -rf keda/charts && kubectl kustomize . -o keda.yaml --enable-helm"
       changedif:
@@ -67,4 +67,4 @@ actions:
       draft: false
       labels:
       - "dependencies"
-      title: "Update KEDA version"
+      title: "chore(deps): update KEDA version"
