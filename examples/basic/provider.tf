@@ -15,13 +15,13 @@ terraform {
   required_providers {
     kops = {
       source  = "terraform-kops/kops"
-      version = "~> 1.28.7"
+      version = "~> 1.31"
     }
 
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 5.62.0"
+      version = "~> 5.6"
     }
   }
-  required_version = ">= 1.1.9"
+  required_version = ">= 1.3"
 }

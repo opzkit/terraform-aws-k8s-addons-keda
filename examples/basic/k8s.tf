@@ -27,14 +27,12 @@ module "keda" {
 }
 
 module "state_store" {
-  source           = "opzkit/kops-state-store/aws"
-  version          = "0.5.0"
+  source           = "github.com/opzkit/terraform-aws-kops-state-store?ref=v0.5.1"
   state_store_name = "some-kops-storage-s3-bucket"
 }
 
 module "k8s-network" {
-  source              = "opzkit/k8s-network/aws"
-  version             = "0.0.10"
+  source              = "github.com/opzkit/terraform-aws-k8s-network?ref=v0.1.0"
   name                = local.name
   region              = local.region
   public_subnet_zones = ["a", "b", "c"]
@@ -48,12 +46,11 @@ module "sso" {
 
 module "k8s" {
   depends_on         = [module.state_store]
-  source             = "opzkit/k8s/aws"
-  version            = "0.15.0"
+  source             = "github.com/opzkit/terraform-aws-k8s?ref=v0.19.0"
   name               = local.name
   region             = local.region
   dns_zone           = local.zone
-  kubernetes_version = "1.28.5"
+  kubernetes_version = "1.31.4"
   master_count       = 3
   vpc_id             = module.k8s-network.vpc.id
   public_subnet_ids  = module.k8s-network.public_subnets
