@@ -46,7 +46,7 @@ module "sso" {
 
 module "k8s" {
   depends_on         = [module.state_store]
-  source             = "github.com/opzkit/terraform-aws-k8s?ref=v0.19.0"
+  source             = "github.com/opzkit/terraform-aws-k8s?ref=v0.19.1"
   name               = local.name
   region             = local.region
   dns_zone           = local.zone
