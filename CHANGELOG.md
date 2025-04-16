@@ -1,5 +1,26 @@
 # Changelog
 
+## [2.18.0](https://github.com/opzkit/terraform-aws-k8s-addons-keda/compare/v2.17.0...v2.18.0) (2025-04-16)
+
+
+### Features
+
+* disable kustomize integration in Renovate config ([#56](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/56)) ([a270177](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/a270177f8cf22afdc5426babea6d32c7e824b4cf))
+
+
+### Bug Fixes
+
+* update module sources and provider versions ([#51](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/51)) ([8ae7671](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/8ae767126ca7ae74f9c305f22ca97d53cbbbeba2))
+
+
+### Miscellaneous Chores
+
+* **deps:** update pre-commit hook antonbabenko/pre-commit-terraform to v1.99.0 ([#55](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/55)) ([5a929a1](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/5a929a13609d9cb7e934213a8b44b8013c1fac38))
+* **deps:** update terraform github.com/opzkit/terraform-aws-k8s to v0.19.1 ([#52](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/52)) ([982d389](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/982d389def6abdb571966c39df1adb60169580c0))
+* **deps:** update terraform github.com/opzkit/terraform-aws-k8s-network to v0.1.1 ([#54](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/54)) ([b740de1](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/b740de1ca5263fa6618c4cf27514e62817330d5e))
+* **deps:** update terraform github.com/opzkit/terraform-aws-kops-state-store to v0.6.0 ([#53](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/53)) ([1b7394f](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/1b7394f9370d9e009e33c1783785c795a92f4aed))
+* update pre-commit flow ([#49](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/49)) ([09c7819](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/09c7819824a9419d14188af4f4d70aa66d340dce))
+
 ## [2.17.0](https://github.com/opzkit/terraform-aws-k8s-addons-keda/compare/v2.16.1...v2.17.0) (2025-04-09)
 
 
