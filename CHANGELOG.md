@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.18.1](https://github.com/opzkit/terraform-aws-k8s-addons-keda/compare/v2.18.0...v2.18.1) (2025-05-17)
+
+
+### Miscellaneous Chores
+
+* remove unnecessary work flow for release please ([#63](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/63)) ([d853475](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/d85347577649ae0b71a2b3aedec81ffdf8d540ac))
+
 ## [2.18.0](https://github.com/opzkit/terraform-aws-k8s-addons-keda/compare/v2.17.0...v2.18.0) (2025-05-16)
 
 
