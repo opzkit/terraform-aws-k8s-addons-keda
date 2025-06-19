@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.18.2](https://github.com/opzkit/terraform-aws-k8s-addons-keda/compare/v2.18.1...v2.18.2) (2025-06-19)
+
+
+### Miscellaneous Chores
+
+* **deps:** update KEDA version ([#71](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/71)) ([8bfbaac](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/8bfbaacffc9823c1853ec8ec3cb7eac699b2c668))
+* **deps:** update KEDA version ([#73](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/73)) ([14ca0a6](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/14ca0a69c4361822b71835c8580b7b99ae25d48c))
+
 ## [2.18.1](https://github.com/opzkit/terraform-aws-k8s-addons-keda/compare/v2.18.0...v2.18.1) (2025-06-19)
 
 
