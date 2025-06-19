@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.18.1](https://github.com/opzkit/terraform-aws-k8s-addons-keda/compare/v2.18.0...v2.18.1) (2025-06-19)
+
+
+### Miscellaneous Chores
+
+* **deps:** update pre-commit hook antonbabenko/pre-commit-terraform to v1.99.1 ([#66](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/66)) ([4ddc25f](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/4ddc25f2a98a901f30c558ec94372ba221ecfc95))
+* **deps:** update pre-commit hook antonbabenko/pre-commit-terraform to v1.99.3 ([#67](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/67)) ([c1c763a](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/c1c763a3f850ced5787abdbe99e22512de71602d))
+* **deps:** update pre-commit hook antonbabenko/pre-commit-terraform to v1.99.4 ([#68](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/68)) ([4a4e9f9](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/4a4e9f9912ec771cc68d337bef8b1c50375bc1b9))
+* **deps:** update terraform aws to v6 ([#69](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/69)) ([028ae9a](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/028ae9acc5b54c76fb1442199283ccc44e13b051))
+* remove unnecessary work flow for release please ([#63](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/63)) ([d853475](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/d85347577649ae0b71a2b3aedec81ffdf8d540ac))
+
 ## [2.18.0](https://github.com/opzkit/terraform-aws-k8s-addons-keda/compare/v2.17.0...v2.18.0) (2025-05-16)
 
 
