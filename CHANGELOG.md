@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.18.3](https://github.com/opzkit/terraform-aws-k8s-addons-keda/compare/v2.18.2...v2.18.3) (2025-06-20)
+
+
+### Miscellaneous Chores
+
+* **deps:** update azure/setup-kubectl digest to 776406b ([#74](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/74)) ([c4d069d](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/c4d069d4c95e26c4887d0ed762e04ba78efc0eac))
+
 ## [2.18.2](https://github.com/opzkit/terraform-aws-k8s-addons-keda/compare/v2.18.1...v2.18.2) (2025-06-19)
 
 
