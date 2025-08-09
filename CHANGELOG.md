@@ -1,5 +1,15 @@
 # Changelog
 
+## [2.18.3](https://github.com/opzkit/terraform-aws-k8s-addons-keda/compare/v2.18.2...v2.18.3) (2025-08-09)
+
+
+### Miscellaneous Chores
+
+* **deps:** update actions/create-github-app-token digest to 0f859bf ([#78](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/78)) ([56fad16](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/56fad16ebea55fdef0770507359c980197dad7e7))
+* **deps:** update azure/setup-kubectl digest to 776406b ([#74](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/74)) ([c4d069d](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/c4d069d4c95e26c4887d0ed762e04ba78efc0eac))
+* **deps:** update pre-commit hook antonbabenko/pre-commit-terraform to v1.100.0 ([#77](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/77)) ([22216a3](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/22216a3f5ed0549df6a092a6f67dc86af48f0718))
+* **deps:** update pre-commit hook antonbabenko/pre-commit-terraform to v1.99.5 ([#76](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/76)) ([91c8220](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/91c82205718818dbc552cc23a79ab4e801d1528d))
+
 ## [2.18.2](https://github.com/opzkit/terraform-aws-k8s-addons-keda/compare/v2.18.1...v2.18.2) (2025-06-19)
 
 
