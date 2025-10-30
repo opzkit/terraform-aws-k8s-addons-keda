@@ -1,5 +1,30 @@
 # Changelog
 
+## [2.18.4](https://github.com/opzkit/terraform-aws-k8s-addons-keda/compare/v2.18.3...v2.18.4) (2025-10-30)
+
+
+### Miscellaneous Chores
+
+* **config:** remove pre-commit hook update schedule ([#123](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/123)) ([b7d7e99](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/b7d7e991a7a886be3d995d7e757cbdcf19802cfc))
+* **deps:** update googleapis/release-please-action digest to 16a9c90 ([#125](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/125)) ([3f62212](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/3f622128cd9a129f81c9126f5007b3e4f856ae1e))
+* **deps:** update KEDA version ([#128](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/128)) ([dcc97b1](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/dcc97b10b77dff96bc5903da5b55bd8cfb1e27c6))
+* **deps:** update pre-commit hook antonbabenko/pre-commit-terraform to v1.101.1 ([#113](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/113)) ([306cce9](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/306cce9e5a35798897676510c07491acc8df3338))
+* **deps:** update pre-commit hook antonbabenko/pre-commit-terraform to v1.102.0 ([#122](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/122)) ([9122264](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/9122264d304a7cfb0e7eec48b5d0211bd9caed81))
+* **deps:** update pre-commit hook antonbabenko/pre-commit-terraform to v1.103.0 ([#124](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/124)) ([a7ee9e3](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/a7ee9e390875697221e55c35be0193e7718532dd))
+* **deps:** update pre-commit hook renovatebot/pre-commit-hooks to v41.144.0 ([#114](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/114)) ([914f19c](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/914f19cad113090bf708fa3b850789cb47f6a33c))
+* **deps:** update pre-commit hook renovatebot/pre-commit-hooks to v41.144.1 ([#115](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/115)) ([ea16bbf](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/ea16bbfaa58ba42c44102787952574fe8991df6a))
+* **deps:** update pre-commit hook renovatebot/pre-commit-hooks to v41.144.3 ([#116](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/116)) ([7b6db73](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/7b6db734692ef34310f4ec64c9b77cae0e09161f))
+* **deps:** update pre-commit hook renovatebot/pre-commit-hooks to v41.144.4 ([#117](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/117)) ([54bceea](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/54bceea37e2a3f155adfbdbf4d16558d9648f5cf))
+* **deps:** update pre-commit hook renovatebot/pre-commit-hooks to v41.145.1 ([#118](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/118)) ([28a4566](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/28a4566e5e9715b806493c9f8ae1fb009d325caf))
+* **deps:** update pre-commit hook renovatebot/pre-commit-hooks to v41.145.3 ([#119](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/119)) ([99f467a](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/99f467a6fc78a586cece9f93ed885c97cc5bd4b6))
+* **deps:** update pre-commit hook renovatebot/pre-commit-hooks to v41.146.0 ([#120](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/120)) ([366597e](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/366597e1e3450227b7eb520627d881ec2e4ada53))
+* **deps:** update terraform-linters/setup-tflint action to v6.2.1 ([#127](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/127)) ([50f7660](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/50f7660ea26d102c834640a6838b4275a54c04d9))
+
+
+### Continuous Integration
+
+* add daily schedule for pre-commit hook updates ([#121](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/121)) ([030912c](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/030912c6bec111a1defd87ab802fae3bd2f8ccfa))
+
 ## [2.18.3](https://github.com/opzkit/terraform-aws-k8s-addons-keda/compare/v2.18.2...v2.18.3) (2025-10-08)
 
 
