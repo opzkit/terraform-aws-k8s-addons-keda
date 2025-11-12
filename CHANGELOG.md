@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.18.5](https://github.com/opzkit/terraform-aws-k8s-addons-keda/compare/v2.18.4...v2.18.5) (2025-11-12)
+
+
+### Miscellaneous Chores
+
+* enhance PR auto-merge workflow with token retrieval ([#129](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/129)) ([01058b7](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/01058b78405c7513d455385917d7852d6494e3f3))
+
 ## [2.18.4](https://github.com/opzkit/terraform-aws-k8s-addons-keda/compare/v2.18.3...v2.18.4) (2025-10-30)
 
 
