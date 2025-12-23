@@ -13,8 +13,8 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: keda-operator
     app.kubernetes.io/part-of: keda-operator
-    app.kubernetes.io/version: 2.18.1
-    helm.sh/chart: keda-2.18.1
+    app.kubernetes.io/version: 2.18.3
+    helm.sh/chart: keda-2.18.3
   name: cloudeventsources.eventing.keda.sh
 spec:
   group: eventing.keda.sh
@@ -176,8 +176,8 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: keda-operator
     app.kubernetes.io/part-of: keda-operator
-    app.kubernetes.io/version: 2.18.1
-    helm.sh/chart: keda-2.18.1
+    app.kubernetes.io/version: 2.18.3
+    helm.sh/chart: keda-2.18.3
   name: clustercloudeventsources.eventing.keda.sh
 spec:
   group: eventing.keda.sh
@@ -337,8 +337,8 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: keda-operator
     app.kubernetes.io/part-of: keda-operator
-    app.kubernetes.io/version: 2.18.1
-    helm.sh/chart: keda-2.18.1
+    app.kubernetes.io/version: 2.18.3
+    helm.sh/chart: keda-2.18.3
   name: clustertriggerauthentications.keda.sh
 spec:
   group: keda.sh
@@ -925,8 +925,8 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: keda-operator
     app.kubernetes.io/part-of: keda-operator
-    app.kubernetes.io/version: 2.18.1
-    helm.sh/chart: keda-2.18.1
+    app.kubernetes.io/version: 2.18.3
+    helm.sh/chart: keda-2.18.3
   name: scaledjobs.keda.sh
 spec:
   group: keda.sh
@@ -9627,8 +9627,8 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: keda-operator
     app.kubernetes.io/part-of: keda-operator
-    app.kubernetes.io/version: 2.18.1
-    helm.sh/chart: keda-2.18.1
+    app.kubernetes.io/version: 2.18.3
+    helm.sh/chart: keda-2.18.3
   name: scaledobjects.keda.sh
 spec:
   group: keda.sh
@@ -10090,8 +10090,8 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: keda-operator
     app.kubernetes.io/part-of: keda-operator
-    app.kubernetes.io/version: 2.18.1
-    helm.sh/chart: keda-2.18.1
+    app.kubernetes.io/version: 2.18.3
+    helm.sh/chart: keda-2.18.3
   name: triggerauthentications.keda.sh
 spec:
   group: keda.sh
@@ -10677,8 +10677,8 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: keda-metrics-server
     app.kubernetes.io/part-of: keda-operator
-    app.kubernetes.io/version: 2.18.1
-    helm.sh/chart: keda-2.18.1
+    app.kubernetes.io/version: 2.18.3
+    helm.sh/chart: keda-2.18.3
   name: keda-metrics-server
   namespace: keda
 ---
@@ -10692,8 +10692,8 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: keda-operator
     app.kubernetes.io/part-of: keda-operator
-    app.kubernetes.io/version: 2.18.1
-    helm.sh/chart: keda-2.18.1
+    app.kubernetes.io/version: 2.18.3
+    helm.sh/chart: keda-2.18.3
   name: keda-operator
   namespace: keda
 ---
@@ -10707,8 +10707,8 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: keda-webhook
     app.kubernetes.io/part-of: keda-operator
-    app.kubernetes.io/version: 2.18.1
-    helm.sh/chart: keda-2.18.1
+    app.kubernetes.io/version: 2.18.3
+    helm.sh/chart: keda-2.18.3
   name: keda-webhook
   namespace: keda
 ---
@@ -10721,8 +10721,8 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: keda-operator-certs
     app.kubernetes.io/part-of: keda-operator
-    app.kubernetes.io/version: 2.18.1
-    helm.sh/chart: keda-2.18.1
+    app.kubernetes.io/version: 2.18.3
+    helm.sh/chart: keda-2.18.3
   name: keda-operator-certs
   namespace: keda
 rules:
@@ -10763,8 +10763,8 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: keda-operator
     app.kubernetes.io/part-of: keda-operator
-    app.kubernetes.io/version: 2.18.1
-    helm.sh/chart: keda-2.18.1
+    app.kubernetes.io/version: 2.18.3
+    helm.sh/chart: keda-2.18.3
   name: keda-operator
 rules:
 - apiGroups:
@@ -10902,8 +10902,8 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: keda-operator-external-metrics-reader
     app.kubernetes.io/part-of: keda-operator
-    app.kubernetes.io/version: 2.18.1
-    helm.sh/chart: keda-2.18.1
+    app.kubernetes.io/version: 2.18.3
+    helm.sh/chart: keda-2.18.3
   name: keda-operator-external-metrics-reader
 rules:
 - apiGroups:
@@ -10922,8 +10922,8 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: keda-operator-minimal-cluster-role
     app.kubernetes.io/part-of: keda-operator
-    app.kubernetes.io/version: 2.18.1
-    helm.sh/chart: keda-2.18.1
+    app.kubernetes.io/version: 2.18.3
+    helm.sh/chart: keda-2.18.3
   name: keda-operator-minimal-cluster-role
 rules:
 - apiGroups:
@@ -10980,8 +10980,8 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: keda-operator-webhook
     app.kubernetes.io/part-of: keda-operator
-    app.kubernetes.io/version: 2.18.1
-    helm.sh/chart: keda-2.18.1
+    app.kubernetes.io/version: 2.18.3
+    helm.sh/chart: keda-2.18.3
   name: keda-operator-webhook
 rules:
 - apiGroups:
@@ -11023,8 +11023,8 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: keda-operator-auth-reader
     app.kubernetes.io/part-of: keda-operator
-    app.kubernetes.io/version: 2.18.1
-    helm.sh/chart: keda-2.18.1
+    app.kubernetes.io/version: 2.18.3
+    helm.sh/chart: keda-2.18.3
   name: keda-operator-auth-reader
   namespace: keda
 roleRef:
@@ -11045,8 +11045,8 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: keda-operator-certs
     app.kubernetes.io/part-of: keda-operator
-    app.kubernetes.io/version: 2.18.1
-    helm.sh/chart: keda-2.18.1
+    app.kubernetes.io/version: 2.18.3
+    helm.sh/chart: keda-2.18.3
   name: keda-operator-certs
   namespace: keda
 roleRef:
@@ -11067,8 +11067,8 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: keda-operator
     app.kubernetes.io/part-of: keda-operator
-    app.kubernetes.io/version: 2.18.1
-    helm.sh/chart: keda-2.18.1
+    app.kubernetes.io/version: 2.18.3
+    helm.sh/chart: keda-2.18.3
   name: keda-operator
 roleRef:
   apiGroup: rbac.authorization.k8s.io
@@ -11088,8 +11088,8 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: keda-operator-hpa-controller-external-metrics
     app.kubernetes.io/part-of: keda-operator
-    app.kubernetes.io/version: 2.18.1
-    helm.sh/chart: keda-2.18.1
+    app.kubernetes.io/version: 2.18.3
+    helm.sh/chart: keda-2.18.3
   name: keda-operator-hpa-controller-external-metrics
 roleRef:
   apiGroup: rbac.authorization.k8s.io
@@ -11109,8 +11109,8 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: keda-operator-minimal
     app.kubernetes.io/part-of: keda-operator
-    app.kubernetes.io/version: 2.18.1
-    helm.sh/chart: keda-2.18.1
+    app.kubernetes.io/version: 2.18.3
+    helm.sh/chart: keda-2.18.3
   name: keda-operator-minimal
 roleRef:
   apiGroup: rbac.authorization.k8s.io
@@ -11130,8 +11130,8 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: keda-operator-system-auth-delegator
     app.kubernetes.io/part-of: keda-operator
-    app.kubernetes.io/version: 2.18.1
-    helm.sh/chart: keda-2.18.1
+    app.kubernetes.io/version: 2.18.3
+    helm.sh/chart: keda-2.18.3
   name: keda-operator-system-auth-delegator
 roleRef:
   apiGroup: rbac.authorization.k8s.io
@@ -11151,8 +11151,8 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: keda-operator-webhook
     app.kubernetes.io/part-of: keda-operator
-    app.kubernetes.io/version: 2.18.1
-    helm.sh/chart: keda-2.18.1
+    app.kubernetes.io/version: 2.18.3
+    helm.sh/chart: keda-2.18.3
   name: keda-operator-webhook
 roleRef:
   apiGroup: rbac.authorization.k8s.io
@@ -11172,8 +11172,8 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: keda-admission-webhooks
     app.kubernetes.io/part-of: keda-operator
-    app.kubernetes.io/version: 2.18.1
-    helm.sh/chart: keda-2.18.1
+    app.kubernetes.io/version: 2.18.3
+    helm.sh/chart: keda-2.18.3
   name: keda-admission-webhooks
   namespace: keda
 spec:
@@ -11195,8 +11195,8 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: keda-operator
     app.kubernetes.io/part-of: keda-operator
-    app.kubernetes.io/version: 2.18.1
-    helm.sh/chart: keda-2.18.1
+    app.kubernetes.io/version: 2.18.3
+    helm.sh/chart: keda-2.18.3
   name: keda-operator
   namespace: keda
 spec:
@@ -11217,8 +11217,8 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: keda-operator-metrics-apiserver
     app.kubernetes.io/part-of: keda-operator
-    app.kubernetes.io/version: 2.18.1
-    helm.sh/chart: keda-2.18.1
+    app.kubernetes.io/version: 2.18.3
+    helm.sh/chart: keda-2.18.3
   name: keda-operator-metrics-apiserver
   namespace: keda
 spec:
@@ -11246,8 +11246,8 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: keda-admission-webhooks
     app.kubernetes.io/part-of: keda-operator
-    app.kubernetes.io/version: 2.18.1
-    helm.sh/chart: keda-2.18.1
+    app.kubernetes.io/version: 2.18.3
+    helm.sh/chart: keda-2.18.3
     name: keda-admission-webhooks
   name: keda-admission-webhooks
   namespace: keda
@@ -11266,8 +11266,8 @@ spec:
         app.kubernetes.io/managed-by: Helm
         app.kubernetes.io/name: keda-admission-webhooks
         app.kubernetes.io/part-of: keda-operator
-        app.kubernetes.io/version: 2.18.1
-        helm.sh/chart: keda-2.18.1
+        app.kubernetes.io/version: 2.18.3
+        helm.sh/chart: keda-2.18.3
         name: keda-admission-webhooks
     spec:
       automountServiceAccountToken: true
@@ -11292,7 +11292,7 @@ spec:
           valueFrom:
             fieldRef:
               fieldPath: metadata.namespace
-        image: ghcr.io/kedacore/keda-admission-webhooks:2.18.1
+        image: ghcr.io/kedacore/keda-admission-webhooks:2.18.3
         imagePullPolicy: Always
         livenessProbe:
           failureThreshold: 3
@@ -11359,8 +11359,8 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: keda-operator
     app.kubernetes.io/part-of: keda-operator
-    app.kubernetes.io/version: 2.18.1
-    helm.sh/chart: keda-2.18.1
+    app.kubernetes.io/version: 2.18.3
+    helm.sh/chart: keda-2.18.3
     name: keda-operator
   name: keda-operator
   namespace: keda
@@ -11379,8 +11379,8 @@ spec:
         app.kubernetes.io/managed-by: Helm
         app.kubernetes.io/name: keda-operator
         app.kubernetes.io/part-of: keda-operator
-        app.kubernetes.io/version: 2.18.1
-        helm.sh/chart: keda-2.18.1
+        app.kubernetes.io/version: 2.18.3
+        helm.sh/chart: keda-2.18.3
         name: keda-operator
     spec:
       automountServiceAccountToken: true
@@ -11420,7 +11420,7 @@ spec:
           value: "3000"
         - name: KEDA_HTTP_MIN_TLS_VERSION
           value: TLS12
-        image: ghcr.io/kedacore/keda:2.18.1
+        image: ghcr.io/kedacore/keda:2.18.3
         imagePullPolicy: Always
         livenessProbe:
           failureThreshold: 3
@@ -11464,7 +11464,9 @@ spec:
         - mountPath: /certs
           name: certificates
           readOnly: true
+      dnsPolicy: ClusterFirst
       enableServiceLinks: true
+      hostNetwork: false
       nodeSelector:
         kubernetes.io/os: linux
       securityContext:
@@ -11487,8 +11489,8 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: keda-operator-metrics-apiserver
     app.kubernetes.io/part-of: keda-operator
-    app.kubernetes.io/version: 2.18.1
-    helm.sh/chart: keda-2.18.1
+    app.kubernetes.io/version: 2.18.3
+    helm.sh/chart: keda-2.18.3
   name: keda-operator-metrics-apiserver
   namespace: keda
 spec:
@@ -11506,8 +11508,8 @@ spec:
         app.kubernetes.io/managed-by: Helm
         app.kubernetes.io/name: keda-operator-metrics-apiserver
         app.kubernetes.io/part-of: keda-operator
-        app.kubernetes.io/version: 2.18.1
-        helm.sh/chart: keda-2.18.1
+        app.kubernetes.io/version: 2.18.3
+        helm.sh/chart: keda-2.18.3
     spec:
       automountServiceAccountToken: true
       containers:
@@ -11539,7 +11541,7 @@ spec:
           value: "3000"
         - name: KEDA_HTTP_MIN_TLS_VERSION
           value: TLS12
-        image: ghcr.io/kedacore/keda-metrics-apiserver:2.18.1
+        image: ghcr.io/kedacore/keda-metrics-apiserver:2.18.3
         imagePullPolicy: Always
         livenessProbe:
           failureThreshold: 3
@@ -11611,8 +11613,8 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: v1beta1.external.metrics.k8s.io
     app.kubernetes.io/part-of: keda-operator
-    app.kubernetes.io/version: 2.18.1
-    helm.sh/chart: keda-2.18.1
+    app.kubernetes.io/version: 2.18.3
+    helm.sh/chart: keda-2.18.3
   name: v1beta1.external.metrics.k8s.io
 spec:
   group: external.metrics.k8s.io
@@ -11633,8 +11635,8 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: keda-admission-webhooks
     app.kubernetes.io/part-of: keda-operator
-    app.kubernetes.io/version: 2.18.1
-    helm.sh/chart: keda-2.18.1
+    app.kubernetes.io/version: 2.18.3
+    helm.sh/chart: keda-2.18.3
   name: keda-admission
 webhooks:
 - admissionReviewVersions:
