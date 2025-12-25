@@ -1,5 +1,19 @@
 # Changelog
 
+## [2.18.6](https://github.com/opzkit/terraform-aws-k8s-addons-keda/compare/v2.18.5...v2.18.6) (2025-12-25)
+
+
+### Bug Fixes
+
+* specify helm version in updatecli workflow ([#146](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/146)) ([28a16e9](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/28a16e9b5f52869d8aab6b291619087eef77e71a))
+
+
+### Miscellaneous Chores
+
+* **deps:** update KEDA version ([#148](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/148)) ([d4fe5ac](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/d4fe5ac358cea9c4c527e0fd3d54a4d7488a8fb7))
+* **deps:** update pre-commit hook renovatebot/pre-commit-hooks to v42.52.8 ([#144](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/144)) ([dacb118](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/dacb118fcc4b99e898f27c97ec99888ee0ba6f49))
+* **deps:** update pre-commit hook renovatebot/pre-commit-hooks to v42.64.1 ([#147](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/147)) ([83d5d2b](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/83d5d2b2d079556ad32f4a5f0f5f69b18cf8e6f0))
+
 ## [2.18.5](https://github.com/opzkit/terraform-aws-k8s-addons-keda/compare/v2.18.4...v2.18.5) (2025-12-09)
 
 
