@@ -1,6 +1,6 @@
 locals {
   keda_yaml = file("${path.module}/keda.yaml")
-  version   = "2.18.3"
+  version   = "2.19.0"
 }
 
 output "addons" {
