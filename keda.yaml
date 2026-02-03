@@ -7,14 +7,14 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.16.5
+    controller-gen.kubebuilder.io/version: v0.20.0
   labels:
     app.kubernetes.io/component: operator
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: keda-operator
     app.kubernetes.io/part-of: keda-operator
-    app.kubernetes.io/version: 2.18.3
-    helm.sh/chart: keda-2.18.3
+    app.kubernetes.io/version: 2.19.0
+    helm.sh/chart: keda-2.19.0
   name: cloudeventsources.eventing.keda.sh
 spec:
   group: eventing.keda.sh
@@ -98,9 +98,16 @@ spec:
                       - keda.scaledobject.ready.v1
                       - keda.scaledobject.failed.v1
                       - keda.scaledobject.removed.v1
+                      - keda.scaledobject.paused.v1
+                      - keda.scaledobject.unpaused.v1
                       - keda.scaledjob.ready.v1
                       - keda.scaledjob.failed.v1
                       - keda.scaledjob.removed.v1
+                      - keda.scaledjob.paused.v1
+                      - keda.scaledjob.unpaused.v1
+                      - keda.scaledjob.rolloutcleanup.started.v1
+                      - keda.scaledjob.rolloutcleanup.completed.v1
+                      - keda.scaledjob.rolloutcleanup.failed.v1
                       - keda.authentication.triggerauthentication.created.v1
                       - keda.authentication.triggerauthentication.updated.v1
                       - keda.authentication.triggerauthentication.removed.v1
@@ -115,9 +122,16 @@ spec:
                       - keda.scaledobject.ready.v1
                       - keda.scaledobject.failed.v1
                       - keda.scaledobject.removed.v1
+                      - keda.scaledobject.paused.v1
+                      - keda.scaledobject.unpaused.v1
                       - keda.scaledjob.ready.v1
                       - keda.scaledjob.failed.v1
                       - keda.scaledjob.removed.v1
+                      - keda.scaledjob.paused.v1
+                      - keda.scaledjob.unpaused.v1
+                      - keda.scaledjob.rolloutcleanup.started.v1
+                      - keda.scaledjob.rolloutcleanup.completed.v1
+                      - keda.scaledjob.rolloutcleanup.failed.v1
                       - keda.authentication.triggerauthentication.created.v1
                       - keda.authentication.triggerauthentication.updated.v1
                       - keda.authentication.triggerauthentication.removed.v1
@@ -170,14 +184,14 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.16.5
+    controller-gen.kubebuilder.io/version: v0.20.0
   labels:
     app.kubernetes.io/component: operator
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: keda-operator
     app.kubernetes.io/part-of: keda-operator
-    app.kubernetes.io/version: 2.18.3
-    helm.sh/chart: keda-2.18.3
+    app.kubernetes.io/version: 2.19.0
+    helm.sh/chart: keda-2.19.0
   name: clustercloudeventsources.eventing.keda.sh
 spec:
   group: eventing.keda.sh
@@ -259,9 +273,16 @@ spec:
                       - keda.scaledobject.ready.v1
                       - keda.scaledobject.failed.v1
                       - keda.scaledobject.removed.v1
+                      - keda.scaledobject.paused.v1
+                      - keda.scaledobject.unpaused.v1
                       - keda.scaledjob.ready.v1
                       - keda.scaledjob.failed.v1
                       - keda.scaledjob.removed.v1
+                      - keda.scaledjob.paused.v1
+                      - keda.scaledjob.unpaused.v1
+                      - keda.scaledjob.rolloutcleanup.started.v1
+                      - keda.scaledjob.rolloutcleanup.completed.v1
+                      - keda.scaledjob.rolloutcleanup.failed.v1
                       - keda.authentication.triggerauthentication.created.v1
                       - keda.authentication.triggerauthentication.updated.v1
                       - keda.authentication.triggerauthentication.removed.v1
@@ -276,9 +297,16 @@ spec:
                       - keda.scaledobject.ready.v1
                       - keda.scaledobject.failed.v1
                       - keda.scaledobject.removed.v1
+                      - keda.scaledobject.paused.v1
+                      - keda.scaledobject.unpaused.v1
                       - keda.scaledjob.ready.v1
                       - keda.scaledjob.failed.v1
                       - keda.scaledjob.removed.v1
+                      - keda.scaledjob.paused.v1
+                      - keda.scaledjob.unpaused.v1
+                      - keda.scaledjob.rolloutcleanup.started.v1
+                      - keda.scaledjob.rolloutcleanup.completed.v1
+                      - keda.scaledjob.rolloutcleanup.failed.v1
                       - keda.authentication.triggerauthentication.created.v1
                       - keda.authentication.triggerauthentication.updated.v1
                       - keda.authentication.triggerauthentication.removed.v1
@@ -331,14 +359,14 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.16.5
+    controller-gen.kubebuilder.io/version: v0.20.0
   labels:
     app.kubernetes.io/component: operator
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: keda-operator
     app.kubernetes.io/part-of: keda-operator
-    app.kubernetes.io/version: 2.18.3
-    helm.sh/chart: keda-2.18.3
+    app.kubernetes.io/version: 2.19.0
+    helm.sh/chart: keda-2.19.0
   name: clustertriggerauthentications.keda.sh
 spec:
   group: keda.sh
@@ -361,6 +389,9 @@ spec:
       type: string
     - jsonPath: .spec.env[*].name
       name: Env
+      type: string
+    - jsonPath: .spec.filePath
+      name: FilePath
       type: string
     - jsonPath: .spec.hashiCorpVault.address
       name: VaultAddress
@@ -685,6 +716,11 @@ spec:
                   - parameter
                   type: object
                 type: array
+              filePath:
+                description: |-
+                  FilePath specifies a file containing auth parameters as JSON map[string]string.
+                  When set, auth params are read directly from this file instead.
+                type: string
               gcpSecretManager:
                 properties:
                   credentials:
@@ -919,14 +955,14 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.16.5
+    controller-gen.kubebuilder.io/version: v0.20.0
   labels:
     app.kubernetes.io/component: operator
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: keda-operator
     app.kubernetes.io/part-of: keda-operator
-    app.kubernetes.io/version: 2.18.3
-    helm.sh/chart: keda-2.18.3
+    app.kubernetes.io/version: 2.19.0
+    helm.sh/chart: keda-2.19.0
   name: scaledjobs.keda.sh
 spec:
   group: keda.sh
@@ -1009,7 +1045,8 @@ spec:
                   backoffLimit:
                     description: |-
                       Specifies the number of retries before marking this job failed.
-                      Defaults to 6
+                      Defaults to 6, unless backoffLimitPerIndex (only Indexed Job) is specified.
+                      When backoffLimitPerIndex is specified, backoffLimit defaults to 2147483647.
                     format: int32
                     type: integer
                   backoffLimitPerIndex:
@@ -1232,8 +1269,6 @@ spec:
 
                       When using podFailurePolicy, Failed is the the only allowed value.
                       TerminatingOrFailed and Failed are allowed values when podFailurePolicy is not in use.
-                      This is an beta field. To use this, enable the JobPodReplacementPolicy feature toggle.
-                      This is on by default.
                     type: string
                   selector:
                     description: |-
@@ -1296,7 +1331,7 @@ spec:
                         description: |-
                           rules represents the list of alternative rules for the declaring the Jobs
                           as successful before `.status.succeeded >= .spec.completions`. Once any of the rules are met,
-                          the "SucceededCriteriaMet" condition is added, and the lingering pods are removed.
+                          the "SuccessCriteriaMet" condition is added, and the lingering pods are removed.
                           The terminal state for such a Job has the "Complete" condition.
                           Additionally, these rules are evaluated in order; Once the Job meets one of the rules,
                           other rules are ignored. At most 20 elements are allowed.
@@ -1968,8 +2003,8 @@ spec:
                                       most preferred is the one with the greatest sum of weights, i.e.
                                       for each node that meets all of the scheduling requirements (resource
                                       request, requiredDuringScheduling anti-affinity expressions, etc.),
-                                      compute a sum by iterating through the elements of this field and adding
-                                      "weight" to the sum if the node has pods which matches the corresponding podAffinityTerm; the
+                                      compute a sum by iterating through the elements of this field and subtracting
+                                      "weight" from the sum if the node has pods which matches the corresponding podAffinityTerm; the
                                       node(s) with the highest sum are the most preferred.
                                     items:
                                       description: The weights of all of the matched
@@ -2369,8 +2404,9 @@ spec:
                                       variable present in a Container.
                                     properties:
                                       name:
-                                        description: Name of the environment variable.
-                                          Must be a C_IDENTIFIER.
+                                        description: |-
+                                          Name of the environment variable.
+                                          May consist of any printable ASCII characters except '='.
                                         type: string
                                       value:
                                         description: |-
@@ -2427,6 +2463,43 @@ spec:
                                                 type: string
                                             required:
                                             - fieldPath
+                                            type: object
+                                            x-kubernetes-map-type: atomic
+                                          fileKeyRef:
+                                            description: |-
+                                              FileKeyRef selects a key of the env file.
+                                              Requires the EnvFiles feature gate to be enabled.
+                                            properties:
+                                              key:
+                                                description: |-
+                                                  The key within the env file. An invalid key will prevent the pod from starting.
+                                                  The keys defined within a source may consist of any printable ASCII characters except '='.
+                                                  During Alpha stage of the EnvFiles feature gate, the key size is limited to 128 characters.
+                                                type: string
+                                              optional:
+                                                default: false
+                                                description: |-
+                                                  Specify whether the file or its key must be defined. If the file or key
+                                                  does not exist, then the env var is not published.
+                                                  If optional is set to true and the specified key does not exist,
+                                                  the environment variable will not be set in the Pod's containers.
+
+                                                  If optional is set to false and the specified key does not exist,
+                                                  an error will be returned during Pod creation.
+                                                type: boolean
+                                              path:
+                                                description: |-
+                                                  The path within the volume from which to select the file.
+                                                  Must be relative and may not contain the '..' path or start with '..'.
+                                                type: string
+                                              volumeName:
+                                                description: The name of the volume
+                                                  mount containing the env file.
+                                                type: string
+                                            required:
+                                            - key
+                                            - path
+                                            - volumeName
                                             type: object
                                             x-kubernetes-map-type: atomic
                                           resourceFieldRef:
@@ -2492,8 +2565,8 @@ spec:
                                 envFrom:
                                   description: |-
                                     List of sources to populate environment variables in the container.
-                                    The keys defined within a source must be a C_IDENTIFIER. All invalid keys
-                                    will be reported as an event when the container is starting. When a key exists in multiple
+                                    The keys defined within a source may consist of any printable ASCII characters except '='.
+                                    When a key exists in multiple
                                     sources, the value associated with the last source will take precedence.
                                     Values defined by an Env with a duplicate key will take precedence.
                                     Cannot be updated.
@@ -2520,9 +2593,9 @@ spec:
                                         type: object
                                         x-kubernetes-map-type: atomic
                                       prefix:
-                                        description: Optional text to prepend to the
-                                          name of each environment variable. Must
-                                          be a C_IDENTIFIER.
+                                        description: |-
+                                          Optional text to prepend to the name of each environment variable.
+                                          May consist of any printable ASCII characters except '='.
                                         type: string
                                       secretRef:
                                         description: The Secret to select from
@@ -3210,7 +3283,7 @@ spec:
                                         Claims lists the names of resources, defined in spec.resourceClaims,
                                         that are used by this container.
 
-                                        This is an alpha field and requires enabling the
+                                        This field depends on the
                                         DynamicResourceAllocation feature gate.
 
                                         This field is immutable. It can only be set for containers.
@@ -3265,10 +3338,10 @@ spec:
                                 restartPolicy:
                                   description: |-
                                     RestartPolicy defines the restart behavior of individual containers in a pod.
-                                    This field may only be set for init containers, and the only allowed value is "Always".
-                                    For non-init containers or when this field is not specified,
+                                    This overrides the pod-level restart policy. When this field is not specified,
                                     the restart behavior is defined by the Pod's restart policy and the container type.
-                                    Setting the RestartPolicy as "Always" for the init container will have the following effect:
+                                    Additionally, setting the RestartPolicy as "Always" for the init container will
+                                    have the following effect:
                                     this init container will be continually restarted on
                                     exit until all regular containers have terminated. Once all regular
                                     containers have completed, all init containers with restartPolicy "Always"
@@ -3280,6 +3353,59 @@ spec:
                                     init container is started, or after any startupProbe has successfully
                                     completed.
                                   type: string
+                                restartPolicyRules:
+                                  description: |-
+                                    Represents a list of rules to be checked to determine if the
+                                    container should be restarted on exit. The rules are evaluated in
+                                    order. Once a rule matches a container exit condition, the remaining
+                                    rules are ignored. If no rule matches the container exit condition,
+                                    the Container-level restart policy determines the whether the container
+                                    is restarted or not. Constraints on the rules:
+                                    - At most 20 rules are allowed.
+                                    - Rules can have the same action.
+                                    - Identical rules are not forbidden in validations.
+                                    When rules are specified, container MUST set RestartPolicy explicitly
+                                    even it if matches the Pod's RestartPolicy.
+                                  items:
+                                    description: ContainerRestartRule describes how
+                                      a container exit is handled.
+                                    properties:
+                                      action:
+                                        description: |-
+                                          Specifies the action taken on a container exit if the requirements
+                                          are satisfied. The only possible value is "Restart" to restart the
+                                          container.
+                                        type: string
+                                      exitCodes:
+                                        description: Represents the exit codes to
+                                          check on container exits.
+                                        properties:
+                                          operator:
+                                            description: |-
+                                              Represents the relationship between the container exit code(s) and the
+                                              specified values. Possible values are:
+                                              - In: the requirement is satisfied if the container exit code is in the
+                                                set of specified values.
+                                              - NotIn: the requirement is satisfied if the container exit code is
+                                                not in the set of specified values.
+                                            type: string
+                                          values:
+                                            description: |-
+                                              Specifies the set of values to check for container exit codes.
+                                              At most 255 elements are allowed.
+                                            items:
+                                              format: int32
+                                              type: integer
+                                            type: array
+                                            x-kubernetes-list-type: set
+                                        required:
+                                        - operator
+                                        type: object
+                                    required:
+                                    - action
+                                    type: object
+                                  type: array
+                                  x-kubernetes-list-type: atomic
                                 securityContext:
                                   description: |-
                                     SecurityContext defines the security options the container should be run with.
@@ -3902,8 +4028,9 @@ spec:
                                       variable present in a Container.
                                     properties:
                                       name:
-                                        description: Name of the environment variable.
-                                          Must be a C_IDENTIFIER.
+                                        description: |-
+                                          Name of the environment variable.
+                                          May consist of any printable ASCII characters except '='.
                                         type: string
                                       value:
                                         description: |-
@@ -3960,6 +4087,43 @@ spec:
                                                 type: string
                                             required:
                                             - fieldPath
+                                            type: object
+                                            x-kubernetes-map-type: atomic
+                                          fileKeyRef:
+                                            description: |-
+                                              FileKeyRef selects a key of the env file.
+                                              Requires the EnvFiles feature gate to be enabled.
+                                            properties:
+                                              key:
+                                                description: |-
+                                                  The key within the env file. An invalid key will prevent the pod from starting.
+                                                  The keys defined within a source may consist of any printable ASCII characters except '='.
+                                                  During Alpha stage of the EnvFiles feature gate, the key size is limited to 128 characters.
+                                                type: string
+                                              optional:
+                                                default: false
+                                                description: |-
+                                                  Specify whether the file or its key must be defined. If the file or key
+                                                  does not exist, then the env var is not published.
+                                                  If optional is set to true and the specified key does not exist,
+                                                  the environment variable will not be set in the Pod's containers.
+
+                                                  If optional is set to false and the specified key does not exist,
+                                                  an error will be returned during Pod creation.
+                                                type: boolean
+                                              path:
+                                                description: |-
+                                                  The path within the volume from which to select the file.
+                                                  Must be relative and may not contain the '..' path or start with '..'.
+                                                type: string
+                                              volumeName:
+                                                description: The name of the volume
+                                                  mount containing the env file.
+                                                type: string
+                                            required:
+                                            - key
+                                            - path
+                                            - volumeName
                                             type: object
                                             x-kubernetes-map-type: atomic
                                           resourceFieldRef:
@@ -4025,8 +4189,8 @@ spec:
                                 envFrom:
                                   description: |-
                                     List of sources to populate environment variables in the container.
-                                    The keys defined within a source must be a C_IDENTIFIER. All invalid keys
-                                    will be reported as an event when the container is starting. When a key exists in multiple
+                                    The keys defined within a source may consist of any printable ASCII characters except '='.
+                                    When a key exists in multiple
                                     sources, the value associated with the last source will take precedence.
                                     Values defined by an Env with a duplicate key will take precedence.
                                     Cannot be updated.
@@ -4053,9 +4217,9 @@ spec:
                                         type: object
                                         x-kubernetes-map-type: atomic
                                       prefix:
-                                        description: Optional text to prepend to the
-                                          name of each environment variable. Must
-                                          be a C_IDENTIFIER.
+                                        description: |-
+                                          Optional text to prepend to the name of each environment variable.
+                                          May consist of any printable ASCII characters except '='.
                                         type: string
                                       secretRef:
                                         description: The Secret to select from
@@ -4726,7 +4890,7 @@ spec:
                                         Claims lists the names of resources, defined in spec.resourceClaims,
                                         that are used by this container.
 
-                                        This is an alpha field and requires enabling the
+                                        This field depends on the
                                         DynamicResourceAllocation feature gate.
 
                                         This field is immutable. It can only be set for containers.
@@ -4782,9 +4946,53 @@ spec:
                                   description: |-
                                     Restart policy for the container to manage the restart behavior of each
                                     container within a pod.
-                                    This may only be set for init containers. You cannot set this field on
-                                    ephemeral containers.
+                                    You cannot set this field on ephemeral containers.
                                   type: string
+                                restartPolicyRules:
+                                  description: |-
+                                    Represents a list of rules to be checked to determine if the
+                                    container should be restarted on exit. You cannot set this field on
+                                    ephemeral containers.
+                                  items:
+                                    description: ContainerRestartRule describes how
+                                      a container exit is handled.
+                                    properties:
+                                      action:
+                                        description: |-
+                                          Specifies the action taken on a container exit if the requirements
+                                          are satisfied. The only possible value is "Restart" to restart the
+                                          container.
+                                        type: string
+                                      exitCodes:
+                                        description: Represents the exit codes to
+                                          check on container exits.
+                                        properties:
+                                          operator:
+                                            description: |-
+                                              Represents the relationship between the container exit code(s) and the
+                                              specified values. Possible values are:
+                                              - In: the requirement is satisfied if the container exit code is in the
+                                                set of specified values.
+                                              - NotIn: the requirement is satisfied if the container exit code is
+                                                not in the set of specified values.
+                                            type: string
+                                          values:
+                                            description: |-
+                                              Specifies the set of values to check for container exit codes.
+                                              At most 255 elements are allowed.
+                                            items:
+                                              format: int32
+                                              type: integer
+                                            type: array
+                                            x-kubernetes-list-type: set
+                                        required:
+                                        - operator
+                                        type: object
+                                    required:
+                                    - action
+                                    type: object
+                                  type: array
+                                  x-kubernetes-list-type: atomic
                                 securityContext:
                                   description: |-
                                     Optional: SecurityContext defines the security options the ephemeral container should be run with.
@@ -5326,7 +5534,9 @@ spec:
                           hostNetwork:
                             description: |-
                               Host networking requested for this pod. Use the host's network namespace.
-                              If this option is set, the ports that will be used must be specified.
+                              When using HostNetwork you should specify ports so the scheduler is aware.
+                              When `hostNetwork` is true, specified `hostPort` fields in port definitions must match `containerPort`,
+                              and unspecified `hostPort` fields in port definitions are defaulted to match `containerPort`.
                               Default to false.
                             type: boolean
                           hostPID:
@@ -5350,6 +5560,19 @@ spec:
                             description: |-
                               Specifies the hostname of the Pod
                               If not specified, the pod's hostname will be set to a system-defined value.
+                            type: string
+                          hostnameOverride:
+                            description: |-
+                              HostnameOverride specifies an explicit override for the pod's hostname as perceived by the pod.
+                              This field only specifies the pod's hostname and does not affect its DNS records.
+                              When this field is set to a non-empty string:
+                              - It takes precedence over the values set in `hostname` and `subdomain`.
+                              - The Pod's hostname will be set to this value.
+                              - `setHostnameAsFQDN` must be nil or set to false.
+                              - `hostNetwork` must be set to false.
+
+                              This field must be a valid DNS subdomain as defined in RFC 1123 and contain at most 64 characters.
+                              Requires the HostnameOverride feature gate to be enabled.
                             type: string
                           imagePullSecrets:
                             description: |-
@@ -5432,8 +5655,9 @@ spec:
                                       variable present in a Container.
                                     properties:
                                       name:
-                                        description: Name of the environment variable.
-                                          Must be a C_IDENTIFIER.
+                                        description: |-
+                                          Name of the environment variable.
+                                          May consist of any printable ASCII characters except '='.
                                         type: string
                                       value:
                                         description: |-
@@ -5490,6 +5714,43 @@ spec:
                                                 type: string
                                             required:
                                             - fieldPath
+                                            type: object
+                                            x-kubernetes-map-type: atomic
+                                          fileKeyRef:
+                                            description: |-
+                                              FileKeyRef selects a key of the env file.
+                                              Requires the EnvFiles feature gate to be enabled.
+                                            properties:
+                                              key:
+                                                description: |-
+                                                  The key within the env file. An invalid key will prevent the pod from starting.
+                                                  The keys defined within a source may consist of any printable ASCII characters except '='.
+                                                  During Alpha stage of the EnvFiles feature gate, the key size is limited to 128 characters.
+                                                type: string
+                                              optional:
+                                                default: false
+                                                description: |-
+                                                  Specify whether the file or its key must be defined. If the file or key
+                                                  does not exist, then the env var is not published.
+                                                  If optional is set to true and the specified key does not exist,
+                                                  the environment variable will not be set in the Pod's containers.
+
+                                                  If optional is set to false and the specified key does not exist,
+                                                  an error will be returned during Pod creation.
+                                                type: boolean
+                                              path:
+                                                description: |-
+                                                  The path within the volume from which to select the file.
+                                                  Must be relative and may not contain the '..' path or start with '..'.
+                                                type: string
+                                              volumeName:
+                                                description: The name of the volume
+                                                  mount containing the env file.
+                                                type: string
+                                            required:
+                                            - key
+                                            - path
+                                            - volumeName
                                             type: object
                                             x-kubernetes-map-type: atomic
                                           resourceFieldRef:
@@ -5555,8 +5816,8 @@ spec:
                                 envFrom:
                                   description: |-
                                     List of sources to populate environment variables in the container.
-                                    The keys defined within a source must be a C_IDENTIFIER. All invalid keys
-                                    will be reported as an event when the container is starting. When a key exists in multiple
+                                    The keys defined within a source may consist of any printable ASCII characters except '='.
+                                    When a key exists in multiple
                                     sources, the value associated with the last source will take precedence.
                                     Values defined by an Env with a duplicate key will take precedence.
                                     Cannot be updated.
@@ -5583,9 +5844,9 @@ spec:
                                         type: object
                                         x-kubernetes-map-type: atomic
                                       prefix:
-                                        description: Optional text to prepend to the
-                                          name of each environment variable. Must
-                                          be a C_IDENTIFIER.
+                                        description: |-
+                                          Optional text to prepend to the name of each environment variable.
+                                          May consist of any printable ASCII characters except '='.
                                         type: string
                                       secretRef:
                                         description: The Secret to select from
@@ -6273,7 +6534,7 @@ spec:
                                         Claims lists the names of resources, defined in spec.resourceClaims,
                                         that are used by this container.
 
-                                        This is an alpha field and requires enabling the
+                                        This field depends on the
                                         DynamicResourceAllocation feature gate.
 
                                         This field is immutable. It can only be set for containers.
@@ -6328,10 +6589,10 @@ spec:
                                 restartPolicy:
                                   description: |-
                                     RestartPolicy defines the restart behavior of individual containers in a pod.
-                                    This field may only be set for init containers, and the only allowed value is "Always".
-                                    For non-init containers or when this field is not specified,
+                                    This overrides the pod-level restart policy. When this field is not specified,
                                     the restart behavior is defined by the Pod's restart policy and the container type.
-                                    Setting the RestartPolicy as "Always" for the init container will have the following effect:
+                                    Additionally, setting the RestartPolicy as "Always" for the init container will
+                                    have the following effect:
                                     this init container will be continually restarted on
                                     exit until all regular containers have terminated. Once all regular
                                     containers have completed, all init containers with restartPolicy "Always"
@@ -6343,6 +6604,59 @@ spec:
                                     init container is started, or after any startupProbe has successfully
                                     completed.
                                   type: string
+                                restartPolicyRules:
+                                  description: |-
+                                    Represents a list of rules to be checked to determine if the
+                                    container should be restarted on exit. The rules are evaluated in
+                                    order. Once a rule matches a container exit condition, the remaining
+                                    rules are ignored. If no rule matches the container exit condition,
+                                    the Container-level restart policy determines the whether the container
+                                    is restarted or not. Constraints on the rules:
+                                    - At most 20 rules are allowed.
+                                    - Rules can have the same action.
+                                    - Identical rules are not forbidden in validations.
+                                    When rules are specified, container MUST set RestartPolicy explicitly
+                                    even it if matches the Pod's RestartPolicy.
+                                  items:
+                                    description: ContainerRestartRule describes how
+                                      a container exit is handled.
+                                    properties:
+                                      action:
+                                        description: |-
+                                          Specifies the action taken on a container exit if the requirements
+                                          are satisfied. The only possible value is "Restart" to restart the
+                                          container.
+                                        type: string
+                                      exitCodes:
+                                        description: Represents the exit codes to
+                                          check on container exits.
+                                        properties:
+                                          operator:
+                                            description: |-
+                                              Represents the relationship between the container exit code(s) and the
+                                              specified values. Possible values are:
+                                              - In: the requirement is satisfied if the container exit code is in the
+                                                set of specified values.
+                                              - NotIn: the requirement is satisfied if the container exit code is
+                                                not in the set of specified values.
+                                            type: string
+                                          values:
+                                            description: |-
+                                              Specifies the set of values to check for container exit codes.
+                                              At most 255 elements are allowed.
+                                            items:
+                                              format: int32
+                                              type: integer
+                                            type: array
+                                            x-kubernetes-list-type: set
+                                        required:
+                                        - operator
+                                        type: object
+                                    required:
+                                    - action
+                                    type: object
+                                  type: array
+                                  x-kubernetes-list-type: atomic
                                 securityContext:
                                   description: |-
                                     SecurityContext defines the security options the container should be run with.
@@ -6878,6 +7192,7 @@ spec:
                               - spec.hostPID
                               - spec.hostIPC
                               - spec.hostUsers
+                              - spec.resources
                               - spec.securityContext.appArmorProfile
                               - spec.securityContext.seLinuxOptions
                               - spec.securityContext.seccompProfile
@@ -7031,7 +7346,7 @@ spec:
                             description: |-
                               Resources is the total amount of CPU and Memory resources required by all
                               containers in the pod. It supports specifying Requests and Limits for
-                              "cpu" and "memory" resource names only. ResourceClaims are not supported.
+                              "cpu", "memory" and "hugepages-" resource names only. ResourceClaims are not supported.
 
                               This field enables fine-grained control over resource allocation for the
                               entire pod, allowing resource sharing among containers in a pod.
@@ -7044,7 +7359,7 @@ spec:
                                   Claims lists the names of resources, defined in spec.resourceClaims,
                                   that are used by this container.
 
-                                  This is an alpha field and requires enabling the
+                                  This field depends on the
                                   DynamicResourceAllocation feature gate.
 
                                   This field is immutable. It can only be set for containers.
@@ -8343,15 +8658,13 @@ spec:
                                                 volumeAttributesClassName may be used to set the VolumeAttributesClass used by this claim.
                                                 If specified, the CSI driver will create or update the volume with the attributes defined
                                                 in the corresponding VolumeAttributesClass. This has a different purpose than storageClassName,
-                                                it can be changed after the claim is created. An empty string value means that no VolumeAttributesClass
-                                                will be applied to the claim but it's not allowed to reset this field to empty string once it is set.
-                                                If unspecified and the PersistentVolumeClaim is unbound, the default VolumeAttributesClass
-                                                will be set by the persistentvolume controller if it exists.
+                                                it can be changed after the claim is created. An empty string or nil value indicates that no
+                                                VolumeAttributesClass will be applied to the claim. If the claim enters an Infeasible error state,
+                                                this field can be reset to its previous value (including nil) to cancel the modification.
                                                 If the resource referred to by volumeAttributesClass does not exist, this PersistentVolumeClaim will be
                                                 set to a Pending state, as reflected by the modifyVolumeStatus field, until such as a resource
                                                 exists.
                                                 More info: https://kubernetes.io/docs/concepts/storage/volume-attributes-classes/
-                                                (Beta) Using this field requires the VolumeAttributesClass feature gate to be enabled (off by default).
                                               type: string
                                             volumeMode:
                                               description: |-
@@ -8536,12 +8849,10 @@ spec:
                                   description: |-
                                     glusterfs represents a Glusterfs mount on the host that shares a pod's lifetime.
                                     Deprecated: Glusterfs is deprecated and the in-tree glusterfs type is no longer supported.
-                                    More info: https://examples.k8s.io/volumes/glusterfs/README.md
                                   properties:
                                     endpoints:
-                                      description: |-
-                                        endpoints is the endpoint name that details Glusterfs topology.
-                                        More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod
+                                      description: endpoints is the endpoint name
+                                        that details Glusterfs topology.
                                       type: string
                                     path:
                                       description: |-
@@ -8620,7 +8931,7 @@ spec:
                                   description: |-
                                     iscsi represents an ISCSI Disk resource that is attached to a
                                     kubelet's host machine and then exposed to the pod.
-                                    More info: https://examples.k8s.io/volumes/iscsi/README.md
+                                    More info: https://kubernetes.io/docs/concepts/storage/volumes/#iscsi
                                   properties:
                                     chapAuthDiscovery:
                                       description: chapAuthDiscovery defines whether
@@ -9054,6 +9365,111 @@ spec:
                                                 type: array
                                                 x-kubernetes-list-type: atomic
                                             type: object
+                                          podCertificate:
+                                            description: |-
+                                              Projects an auto-rotating credential bundle (private key and certificate
+                                              chain) that the pod can use either as a TLS client or server.
+
+                                              Kubelet generates a private key and uses it to send a
+                                              PodCertificateRequest to the named signer.  Once the signer approves the
+                                              request and issues a certificate chain, Kubelet writes the key and
+                                              certificate chain to the pod filesystem.  The pod does not start until
+                                              certificates have been issued for each podCertificate projected volume
+                                              source in its spec.
+
+                                              Kubelet will begin trying to rotate the certificate at the time indicated
+                                              by the signer using the PodCertificateRequest.Status.BeginRefreshAt
+                                              timestamp.
+
+                                              Kubelet can write a single file, indicated by the credentialBundlePath
+                                              field, or separate files, indicated by the keyPath and
+                                              certificateChainPath fields.
+
+                                              The credential bundle is a single file in PEM format.  The first PEM
+                                              entry is the private key (in PKCS#8 format), and the remaining PEM
+                                              entries are the certificate chain issued by the signer (typically,
+                                              signers will return their certificate chain in leaf-to-root order).
+
+                                              Prefer using the credential bundle format, since your application code
+                                              can read it atomically.  If you use keyPath and certificateChainPath,
+                                              your application must make two separate file reads. If these coincide
+                                              with a certificate rotation, it is possible that the private key and leaf
+                                              certificate you read may not correspond to each other.  Your application
+                                              will need to check for this condition, and re-read until they are
+                                              consistent.
+
+                                              The named signer controls chooses the format of the certificate it
+                                              issues; consult the signer implementation's documentation to learn how to
+                                              use the certificates it issues.
+                                            properties:
+                                              certificateChainPath:
+                                                description: |-
+                                                  Write the certificate chain at this path in the projected volume.
+
+                                                  Most applications should use credentialBundlePath.  When using keyPath
+                                                  and certificateChainPath, your application needs to check that the key
+                                                  and leaf certificate are consistent, because it is possible to read the
+                                                  files mid-rotation.
+                                                type: string
+                                              credentialBundlePath:
+                                                description: |-
+                                                  Write the credential bundle at this path in the projected volume.
+
+                                                  The credential bundle is a single file that contains multiple PEM blocks.
+                                                  The first PEM block is a PRIVATE KEY block, containing a PKCS#8 private
+                                                  key.
+
+                                                  The remaining blocks are CERTIFICATE blocks, containing the issued
+                                                  certificate chain from the signer (leaf and any intermediates).
+
+                                                  Using credentialBundlePath lets your Pod's application code make a single
+                                                  atomic read that retrieves a consistent key and certificate chain.  If you
+                                                  project them to separate files, your application code will need to
+                                                  additionally check that the leaf certificate was issued to the key.
+                                                type: string
+                                              keyPath:
+                                                description: |-
+                                                  Write the key at this path in the projected volume.
+
+                                                  Most applications should use credentialBundlePath.  When using keyPath
+                                                  and certificateChainPath, your application needs to check that the key
+                                                  and leaf certificate are consistent, because it is possible to read the
+                                                  files mid-rotation.
+                                                type: string
+                                              keyType:
+                                                description: |-
+                                                  The type of keypair Kubelet will generate for the pod.
+
+                                                  Valid values are "RSA3072", "RSA4096", "ECDSAP256", "ECDSAP384",
+                                                  "ECDSAP521", and "ED25519".
+                                                type: string
+                                              maxExpirationSeconds:
+                                                description: |-
+                                                  maxExpirationSeconds is the maximum lifetime permitted for the
+                                                  certificate.
+
+                                                  Kubelet copies this value verbatim into the PodCertificateRequests it
+                                                  generates for this projection.
+
+                                                  If omitted, kube-apiserver will set it to 86400(24 hours). kube-apiserver
+                                                  will reject values shorter than 3600 (1 hour).  The maximum allowable
+                                                  value is 7862400 (91 days).
+
+                                                  The signer implementation is then free to issue a certificate with any
+                                                  lifetime *shorter* than MaxExpirationSeconds, but no shorter than 3600
+                                                  seconds (1 hour).  This constraint is enforced by kube-apiserver.
+                                                  `kubernetes.io` signers will never issue certificates with a lifetime
+                                                  longer than 24 hours.
+                                                format: int32
+                                                type: integer
+                                              signerName:
+                                                description: Kubelet's generated CSRs
+                                                  will be addressed to this signer.
+                                                type: string
+                                            required:
+                                            - keyType
+                                            - signerName
+                                            type: object
                                           secret:
                                             description: secret information about
                                               the secret data to project
@@ -9191,7 +9607,6 @@ spec:
                                   description: |-
                                     rbd represents a Rados Block Device mount on the host that shares a pod's lifetime.
                                     Deprecated: RBD is deprecated and the in-tree rbd type is no longer supported.
-                                    More info: https://examples.k8s.io/volumes/rbd/README.md
                                   properties:
                                     fsType:
                                       description: |-
@@ -9605,9 +10020,22 @@ spec:
                   - type
                   type: object
                 type: array
+              externalMetricNames:
+                items:
+                  type: string
+                type: array
               lastActiveTime:
                 format: date-time
                 type: string
+              triggersActivity:
+                additionalProperties:
+                  description: TriggerActivityStatus represents the activity status
+                    of an external trigger
+                  properties:
+                    isActive:
+                      type: boolean
+                  type: object
+                type: object
               triggersTypes:
                 type: string
             type: object
@@ -9621,14 +10049,14 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.16.5
+    controller-gen.kubebuilder.io/version: v0.20.0
   labels:
     app.kubernetes.io/component: operator
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: keda-operator
     app.kubernetes.io/part-of: keda-operator
-    app.kubernetes.io/version: 2.18.3
-    helm.sh/chart: keda-2.18.3
+    app.kubernetes.io/version: 2.19.0
+    helm.sh/chart: keda-2.19.0
   name: scaledobjects.keda.sh
 spec:
   group: keda.sh
@@ -10069,6 +10497,15 @@ spec:
                 type: object
               scaleTargetKind:
                 type: string
+              triggersActivity:
+                additionalProperties:
+                  description: TriggerActivityStatus represents the activity status
+                    of an external trigger
+                  properties:
+                    isActive:
+                      type: boolean
+                  type: object
+                type: object
               triggersTypes:
                 type: string
             type: object
@@ -10084,14 +10521,14 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    controller-gen.kubebuilder.io/version: v0.16.5
+    controller-gen.kubebuilder.io/version: v0.20.0
   labels:
     app.kubernetes.io/component: operator
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: keda-operator
     app.kubernetes.io/part-of: keda-operator
-    app.kubernetes.io/version: 2.18.3
-    helm.sh/chart: keda-2.18.3
+    app.kubernetes.io/version: 2.19.0
+    helm.sh/chart: keda-2.19.0
   name: triggerauthentications.keda.sh
 spec:
   group: keda.sh
@@ -10437,6 +10874,11 @@ spec:
                   - parameter
                   type: object
                 type: array
+              filePath:
+                description: |-
+                  FilePath specifies a file containing auth parameters as JSON map[string]string.
+                  When set, auth params are read directly from this file instead.
+                type: string
               gcpSecretManager:
                 properties:
                   credentials:
@@ -10677,8 +11119,8 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: keda-metrics-server
     app.kubernetes.io/part-of: keda-operator
-    app.kubernetes.io/version: 2.18.3
-    helm.sh/chart: keda-2.18.3
+    app.kubernetes.io/version: 2.19.0
+    helm.sh/chart: keda-2.19.0
   name: keda-metrics-server
   namespace: keda
 ---
@@ -10692,8 +11134,8 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: keda-operator
     app.kubernetes.io/part-of: keda-operator
-    app.kubernetes.io/version: 2.18.3
-    helm.sh/chart: keda-2.18.3
+    app.kubernetes.io/version: 2.19.0
+    helm.sh/chart: keda-2.19.0
   name: keda-operator
   namespace: keda
 ---
@@ -10707,8 +11149,8 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: keda-webhook
     app.kubernetes.io/part-of: keda-operator
-    app.kubernetes.io/version: 2.18.3
-    helm.sh/chart: keda-2.18.3
+    app.kubernetes.io/version: 2.19.0
+    helm.sh/chart: keda-2.19.0
   name: keda-webhook
   namespace: keda
 ---
@@ -10721,8 +11163,8 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: keda-operator-certs
     app.kubernetes.io/part-of: keda-operator
-    app.kubernetes.io/version: 2.18.3
-    helm.sh/chart: keda-2.18.3
+    app.kubernetes.io/version: 2.19.0
+    helm.sh/chart: keda-2.19.0
   name: keda-operator-certs
   namespace: keda
 rules:
@@ -10763,8 +11205,8 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: keda-operator
     app.kubernetes.io/part-of: keda-operator
-    app.kubernetes.io/version: 2.18.3
-    helm.sh/chart: keda-2.18.3
+    app.kubernetes.io/version: 2.19.0
+    helm.sh/chart: keda-2.19.0
   name: keda-operator
 rules:
 - apiGroups:
@@ -10902,8 +11344,8 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: keda-operator-external-metrics-reader
     app.kubernetes.io/part-of: keda-operator
-    app.kubernetes.io/version: 2.18.3
-    helm.sh/chart: keda-2.18.3
+    app.kubernetes.io/version: 2.19.0
+    helm.sh/chart: keda-2.19.0
   name: keda-operator-external-metrics-reader
 rules:
 - apiGroups:
@@ -10922,8 +11364,8 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: keda-operator-minimal-cluster-role
     app.kubernetes.io/part-of: keda-operator
-    app.kubernetes.io/version: 2.18.3
-    helm.sh/chart: keda-2.18.3
+    app.kubernetes.io/version: 2.19.0
+    helm.sh/chart: keda-2.19.0
   name: keda-operator-minimal-cluster-role
 rules:
 - apiGroups:
@@ -10980,8 +11422,8 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: keda-operator-webhook
     app.kubernetes.io/part-of: keda-operator
-    app.kubernetes.io/version: 2.18.3
-    helm.sh/chart: keda-2.18.3
+    app.kubernetes.io/version: 2.19.0
+    helm.sh/chart: keda-2.19.0
   name: keda-operator-webhook
 rules:
 - apiGroups:
@@ -11023,8 +11465,8 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: keda-operator-auth-reader
     app.kubernetes.io/part-of: keda-operator
-    app.kubernetes.io/version: 2.18.3
-    helm.sh/chart: keda-2.18.3
+    app.kubernetes.io/version: 2.19.0
+    helm.sh/chart: keda-2.19.0
   name: keda-operator-auth-reader
   namespace: keda
 roleRef:
@@ -11045,8 +11487,8 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: keda-operator-certs
     app.kubernetes.io/part-of: keda-operator
-    app.kubernetes.io/version: 2.18.3
-    helm.sh/chart: keda-2.18.3
+    app.kubernetes.io/version: 2.19.0
+    helm.sh/chart: keda-2.19.0
   name: keda-operator-certs
   namespace: keda
 roleRef:
@@ -11067,8 +11509,8 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: keda-operator
     app.kubernetes.io/part-of: keda-operator
-    app.kubernetes.io/version: 2.18.3
-    helm.sh/chart: keda-2.18.3
+    app.kubernetes.io/version: 2.19.0
+    helm.sh/chart: keda-2.19.0
   name: keda-operator
 roleRef:
   apiGroup: rbac.authorization.k8s.io
@@ -11088,8 +11530,8 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: keda-operator-hpa-controller-external-metrics
     app.kubernetes.io/part-of: keda-operator
-    app.kubernetes.io/version: 2.18.3
-    helm.sh/chart: keda-2.18.3
+    app.kubernetes.io/version: 2.19.0
+    helm.sh/chart: keda-2.19.0
   name: keda-operator-hpa-controller-external-metrics
 roleRef:
   apiGroup: rbac.authorization.k8s.io
@@ -11109,8 +11551,8 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: keda-operator-minimal
     app.kubernetes.io/part-of: keda-operator
-    app.kubernetes.io/version: 2.18.3
-    helm.sh/chart: keda-2.18.3
+    app.kubernetes.io/version: 2.19.0
+    helm.sh/chart: keda-2.19.0
   name: keda-operator-minimal
 roleRef:
   apiGroup: rbac.authorization.k8s.io
@@ -11130,8 +11572,8 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: keda-operator-system-auth-delegator
     app.kubernetes.io/part-of: keda-operator
-    app.kubernetes.io/version: 2.18.3
-    helm.sh/chart: keda-2.18.3
+    app.kubernetes.io/version: 2.19.0
+    helm.sh/chart: keda-2.19.0
   name: keda-operator-system-auth-delegator
 roleRef:
   apiGroup: rbac.authorization.k8s.io
@@ -11151,8 +11593,8 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: keda-operator-webhook
     app.kubernetes.io/part-of: keda-operator
-    app.kubernetes.io/version: 2.18.3
-    helm.sh/chart: keda-2.18.3
+    app.kubernetes.io/version: 2.19.0
+    helm.sh/chart: keda-2.19.0
   name: keda-operator-webhook
 roleRef:
   apiGroup: rbac.authorization.k8s.io
@@ -11172,8 +11614,8 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: keda-admission-webhooks
     app.kubernetes.io/part-of: keda-operator
-    app.kubernetes.io/version: 2.18.3
-    helm.sh/chart: keda-2.18.3
+    app.kubernetes.io/version: 2.19.0
+    helm.sh/chart: keda-2.19.0
   name: keda-admission-webhooks
   namespace: keda
 spec:
@@ -11195,8 +11637,8 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: keda-operator
     app.kubernetes.io/part-of: keda-operator
-    app.kubernetes.io/version: 2.18.3
-    helm.sh/chart: keda-2.18.3
+    app.kubernetes.io/version: 2.19.0
+    helm.sh/chart: keda-2.19.0
   name: keda-operator
   namespace: keda
 spec:
@@ -11217,8 +11659,8 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: keda-operator-metrics-apiserver
     app.kubernetes.io/part-of: keda-operator
-    app.kubernetes.io/version: 2.18.3
-    helm.sh/chart: keda-2.18.3
+    app.kubernetes.io/version: 2.19.0
+    helm.sh/chart: keda-2.19.0
   name: keda-operator-metrics-apiserver
   namespace: keda
 spec:
@@ -11246,8 +11688,8 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: keda-admission-webhooks
     app.kubernetes.io/part-of: keda-operator
-    app.kubernetes.io/version: 2.18.3
-    helm.sh/chart: keda-2.18.3
+    app.kubernetes.io/version: 2.19.0
+    helm.sh/chart: keda-2.19.0
     name: keda-admission-webhooks
   name: keda-admission-webhooks
   namespace: keda
@@ -11266,8 +11708,8 @@ spec:
         app.kubernetes.io/managed-by: Helm
         app.kubernetes.io/name: keda-admission-webhooks
         app.kubernetes.io/part-of: keda-operator
-        app.kubernetes.io/version: 2.18.3
-        helm.sh/chart: keda-2.18.3
+        app.kubernetes.io/version: 2.19.0
+        helm.sh/chart: keda-2.19.0
         name: keda-admission-webhooks
     spec:
       automountServiceAccountToken: true
@@ -11292,7 +11734,7 @@ spec:
           valueFrom:
             fieldRef:
               fieldPath: metadata.namespace
-        image: ghcr.io/kedacore/keda-admission-webhooks:2.18.3
+        image: ghcr.io/kedacore/keda-admission-webhooks:2.19.0
         imagePullPolicy: Always
         livenessProbe:
           failureThreshold: 3
@@ -11359,8 +11801,8 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: keda-operator
     app.kubernetes.io/part-of: keda-operator
-    app.kubernetes.io/version: 2.18.3
-    helm.sh/chart: keda-2.18.3
+    app.kubernetes.io/version: 2.19.0
+    helm.sh/chart: keda-2.19.0
     name: keda-operator
   name: keda-operator
   namespace: keda
@@ -11379,8 +11821,8 @@ spec:
         app.kubernetes.io/managed-by: Helm
         app.kubernetes.io/name: keda-operator
         app.kubernetes.io/part-of: keda-operator
-        app.kubernetes.io/version: 2.18.3
-        helm.sh/chart: keda-2.18.3
+        app.kubernetes.io/version: 2.19.0
+        helm.sh/chart: keda-2.19.0
         name: keda-operator
     spec:
       automountServiceAccountToken: true
@@ -11420,7 +11862,7 @@ spec:
           value: "3000"
         - name: KEDA_HTTP_MIN_TLS_VERSION
           value: TLS12
-        image: ghcr.io/kedacore/keda:2.18.3
+        image: ghcr.io/kedacore/keda:2.19.0
         imagePullPolicy: Always
         livenessProbe:
           failureThreshold: 3
@@ -11489,8 +11931,8 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: keda-operator-metrics-apiserver
     app.kubernetes.io/part-of: keda-operator
-    app.kubernetes.io/version: 2.18.3
-    helm.sh/chart: keda-2.18.3
+    app.kubernetes.io/version: 2.19.0
+    helm.sh/chart: keda-2.19.0
   name: keda-operator-metrics-apiserver
   namespace: keda
 spec:
@@ -11508,8 +11950,8 @@ spec:
         app.kubernetes.io/managed-by: Helm
         app.kubernetes.io/name: keda-operator-metrics-apiserver
         app.kubernetes.io/part-of: keda-operator
-        app.kubernetes.io/version: 2.18.3
-        helm.sh/chart: keda-2.18.3
+        app.kubernetes.io/version: 2.19.0
+        helm.sh/chart: keda-2.19.0
     spec:
       automountServiceAccountToken: true
       containers:
@@ -11541,7 +11983,7 @@ spec:
           value: "3000"
         - name: KEDA_HTTP_MIN_TLS_VERSION
           value: TLS12
-        image: ghcr.io/kedacore/keda-metrics-apiserver:2.18.3
+        image: ghcr.io/kedacore/keda-metrics-apiserver:2.19.0
         imagePullPolicy: Always
         livenessProbe:
           failureThreshold: 3
@@ -11613,8 +12055,8 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: v1beta1.external.metrics.k8s.io
     app.kubernetes.io/part-of: keda-operator
-    app.kubernetes.io/version: 2.18.3
-    helm.sh/chart: keda-2.18.3
+    app.kubernetes.io/version: 2.19.0
+    helm.sh/chart: keda-2.19.0
   name: v1beta1.external.metrics.k8s.io
 spec:
   group: external.metrics.k8s.io
@@ -11635,8 +12077,8 @@ metadata:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/name: keda-admission-webhooks
     app.kubernetes.io/part-of: keda-operator
-    app.kubernetes.io/version: 2.18.3
-    helm.sh/chart: keda-2.18.3
+    app.kubernetes.io/version: 2.19.0
+    helm.sh/chart: keda-2.19.0
   name: keda-admission
 webhooks:
 - admissionReviewVersions:
