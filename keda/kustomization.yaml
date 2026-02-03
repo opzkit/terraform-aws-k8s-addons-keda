@@ -7,7 +7,7 @@ helmCharts:
 - name: keda
   namespace: keda
   repo: https://kedacore.github.io/charts
-  version: 2.18.3
+  version: 2.19.0
   releaseName: "keda"
   includeCRDs: true
   valuesFile: values.yaml
