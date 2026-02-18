@@ -1,5 +1,18 @@
 # Changelog
 
+## [2.18.8](https://github.com/opzkit/terraform-aws-k8s-addons-keda/compare/v2.18.7...v2.18.8) (2026-02-18)
+
+
+### Bug Fixes
+
+* use floor version constraints for provider versions ([#165](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/165)) ([65c899e](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/65c899eb8ee956953cf8e6e8aac9aeb476c83d8e))
+
+
+### Miscellaneous Chores
+
+* **deps:** update pre-commit hook renovatebot/pre-commit-hooks to v43.15.1 ([#164](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/164)) ([c8c9ac7](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/c8c9ac7684c2424350c0529861c46637e139c1a0))
+* **deps:** update pre-commit hook renovatebot/pre-commit-hooks to v43.4.3 ([#162](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/162)) ([1a81a45](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/1a81a45347648b74ab1385b95e3b2c86e9837837))
+
 ## [2.18.7](https://github.com/opzkit/terraform-aws-k8s-addons-keda/compare/v2.18.6...v2.18.7) (2026-02-03)
 
 
