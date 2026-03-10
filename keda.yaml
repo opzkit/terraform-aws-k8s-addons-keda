@@ -11761,10 +11761,9 @@ spec:
           timeoutSeconds: 1
         resources:
           limits:
-            cpu: 1
             memory: 1000Mi
           requests:
-            cpu: 100m
+            cpu: 10m
             memory: 100Mi
         securityContext:
           allowPrivilegeEscalation: false
@@ -11889,10 +11888,9 @@ spec:
           timeoutSeconds: 1
         resources:
           limits:
-            cpu: 1
             memory: 1000Mi
           requests:
-            cpu: 100m
+            cpu: 10m
             memory: 100Mi
         securityContext:
           allowPrivilegeEscalation: false
@@ -12015,10 +12013,9 @@ spec:
           timeoutSeconds: 1
         resources:
           limits:
-            cpu: 1
             memory: 1000Mi
           requests:
-            cpu: 100m
+            cpu: 10m
             memory: 100Mi
         securityContext:
           allowPrivilegeEscalation: false
