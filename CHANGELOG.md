@@ -1,5 +1,20 @@
 # Changelog
 
+## [2.18.9](https://github.com/opzkit/terraform-aws-k8s-addons-keda/compare/v2.18.8...v2.18.9) (2026-03-10)
+
+
+### Bug Fixes
+
+* remove CPU limits and reduce CPU requests ([#170](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/170)) ([73fce9e](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/73fce9e2eeb72baf94db4f91c310a1ba73672c84))
+* remove CPU limits, reduce requests, and update CI examples ([#171](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/171)) ([d81389f](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/d81389ffcf2e4e22bf6e2a06a92a9772e1f0af48))
+
+
+### Miscellaneous Chores
+
+* **deps:** update hashicorp/setup-terraform action to v4 ([#168](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/168)) ([f41c190](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/f41c19062b84785578411df916d6edd1f2f41754))
+* **deps:** update pre-commit hook renovatebot/pre-commit-hooks to v43.31.1 ([#166](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/166)) ([59d3570](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/59d3570b8e58556de7eec985f5426fc7f7ab66f8))
+* **deps:** update pre-commit hook renovatebot/pre-commit-hooks to v43.59.4 ([#169](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/169)) ([dde0aba](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/dde0abad77aa8ee74b4485faa4f9cafa6a5b2904))
+
 ## [2.18.8](https://github.com/opzkit/terraform-aws-k8s-addons-keda/compare/v2.18.7...v2.18.8) (2026-02-18)
 
 
