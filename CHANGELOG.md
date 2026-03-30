@@ -1,5 +1,18 @@
 # Changelog
 
+## [2.18.10](https://github.com/opzkit/terraform-aws-k8s-addons-keda/compare/v2.18.9...v2.18.10) (2026-03-30)
+
+
+### Miscellaneous Chores
+
+* **deps:** update actions/create-github-app-token action to v3 ([#174](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/174)) ([4ea8ffc](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/4ea8ffcf6485856cda32f229e34193bdb676df3a))
+* **deps:** update actions/create-github-app-token digest to fee1f7d ([#172](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/172)) ([6c3f315](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/6c3f315c4c455ec68a5b1ff9365215859f99ee72))
+* **deps:** update azure/setup-helm action to v5 ([#177](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/177)) ([271f545](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/271f545ac73bcceda4a66813e202772b1db80779))
+* **deps:** update azure/setup-kubectl action to v5 ([#178](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/178)) ([2512e12](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/2512e12e27ecbb1af9dac6c23514e6ae283b803a))
+* **deps:** update pre-commit hook renovatebot/pre-commit-hooks to v43.86.0 ([#176](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/176)) ([4195463](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/41954639dcfffe5cc050885aa0a1329928245dac))
+* **deps:** update pre-commit hook renovatebot/pre-commit-hooks to v43.99.1 ([#179](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/179)) ([03a0dc5](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/03a0dc5c3e4cc210bf30221b6a2cf215bcadcfd0))
+* **deps:** update terraform-linters/setup-tflint action to v6.2.2 ([#173](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/173)) ([209a0a8](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/209a0a85df00072954ee7406032ea8b3cc31cb1b))
+
 ## [2.18.9](https://github.com/opzkit/terraform-aws-k8s-addons-keda/compare/v2.18.8...v2.18.9) (2026-03-10)
 
 
