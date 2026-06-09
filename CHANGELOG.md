@@ -1,5 +1,15 @@
 # Changelog
 
+## [2.18.11](https://github.com/opzkit/terraform-aws-k8s-addons-keda/compare/v2.18.10...v2.18.11) (2026-06-09)
+
+
+### Miscellaneous Chores
+
+* **deps:** update actions/checkout action to v6.0.3 ([#198](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/198)) ([cfde16b](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/cfde16b2bdbcd4e2692d07c07fd287507cfe7909))
+* **deps:** update actions/checkout digest to df4cb1c ([#196](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/196)) ([9023052](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/902305242acff0e387481e0b337a3be7321a414b))
+* **deps:** update KEDA version ([#200](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/200)) ([ab5f639](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/ab5f6394adc53374a8f9829dd48ab65f703fb9ed))
+* **deps:** update pre-commit hook renovatebot/pre-commit-hooks to v43.212.4 ([#199](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/199)) ([3be696f](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/3be696f377b973f3d052ddcf689ac96195feb622))
+
 ## [2.18.10](https://github.com/opzkit/terraform-aws-k8s-addons-keda/compare/v2.18.9...v2.18.10) (2026-06-02)
 
 
