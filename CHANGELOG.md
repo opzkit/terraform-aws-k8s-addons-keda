@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.18.12](https://github.com/opzkit/terraform-aws-k8s-addons-keda/compare/v2.18.11...v2.18.12) (2026-06-12)
+
+
+### Miscellaneous Chores
+
+* **deps:** update dependency helm to v3.21.0 ([#201](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/201)) ([0e119b0](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/0e119b0b0e431eb84b194dc549254773561f0295))
+* **deps:** update dependency helm to v4 ([#202](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/202)) ([35dcc40](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/35dcc40388e1b791d6a9c362ffb7f673c8440a74))
+
 ## [2.18.11](https://github.com/opzkit/terraform-aws-k8s-addons-keda/compare/v2.18.10...v2.18.11) (2026-06-09)
 
 
