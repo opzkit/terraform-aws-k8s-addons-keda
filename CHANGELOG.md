@@ -1,5 +1,26 @@
 # Changelog
 
+## [2.18.12](https://github.com/opzkit/terraform-aws-k8s-addons-keda/compare/v2.18.11...v2.18.12) (2026-07-23)
+
+
+### Miscellaneous Chores
+
+* **deps:** update actions/checkout action to v7 ([#205](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/205)) ([e014c18](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/e014c186375b70219a9051ce3e4bb199a4432069))
+* **deps:** update actions/checkout digest to 3d3c42e ([#215](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/215)) ([3abbb13](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/3abbb13b46402616657cdd5bf6b2e5f359672510))
+* **deps:** update actions/setup-python action to v6.3.0 ([#210](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/210)) ([e956d5f](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/e956d5f7ae35e80426b16599a76b855f971986ba))
+* **deps:** update actions/setup-python action to v7 ([#216](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/216)) ([295c63a](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/295c63a402f98b621ef9d6c0c74bd840a75e9a0f))
+* **deps:** update azure/setup-helm action to v5.0.1 ([#209](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/209)) ([5428556](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/5428556ae4bd78bebf1b6b214182d3e9400dcde3))
+* **deps:** update dependency helm to v3.21.0 ([#201](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/201)) ([0e119b0](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/0e119b0b0e431eb84b194dc549254773561f0295))
+* **deps:** update dependency helm to v4 ([#202](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/202)) ([35dcc40](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/35dcc40388e1b791d6a9c362ffb7f673c8440a74))
+* **deps:** update dependency helm to v4.2.1 ([#204](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/204)) ([839ba4b](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/839ba4b6368b29ddea4f014e815057e641ffce09))
+* **deps:** update dependency helm to v4.2.2 ([#206](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/206)) ([526e9b0](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/526e9b0ce8adf3421fc888b04052f0ed764cf37f))
+* **deps:** update dependency helm to v4.2.3 ([#213](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/213)) ([da488b6](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/da488b6c667bd4ae0a1b921041a1ca9ecb925ec3))
+* **deps:** update pre-commit hook alessandrojcm/commitlint-pre-commit-hook to v9.26.0 ([#211](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/211)) ([6654680](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/6654680d7511dc602a9010a9ce49fbbe73a571d2))
+* **deps:** update pre-commit hook antonbabenko/pre-commit-terraform to v1.107.0 ([#207](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/207)) ([e39ff63](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/e39ff6338396d1e70dbcf6ca0445b39049f86795))
+* **deps:** update pre-commit hook antonbabenko/pre-commit-terraform to v1.108.0 ([#208](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/208)) ([039c9f5](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/039c9f54b33b8f6b2da930fb22b7e8ea2b12e509))
+* **deps:** update pre-commit hook renovatebot/pre-commit-hooks to v43.257.0 ([#214](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/214)) ([a1658c3](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/a1658c32e4625c9051c67b430bad9e7af3b2665f))
+* **deps:** update terraform-linters/setup-tflint action to v6.3.0 ([#212](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/212)) ([5c4e7ac](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/5c4e7acd91a4ab3c84c4fb0825d5567e2e1336dd))
+
 ## [2.18.11](https://github.com/opzkit/terraform-aws-k8s-addons-keda/compare/v2.18.10...v2.18.11) (2026-06-09)
 
 
