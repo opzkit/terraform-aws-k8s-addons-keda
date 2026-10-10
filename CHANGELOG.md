@@ -1,5 +1,15 @@
 # Changelog
 
+## [2.18.13](https://github.com/opzkit/terraform-aws-k8s-addons-keda/compare/v2.18.12...v2.18.13) (2026-10-10)
+
+
+### Miscellaneous Chores
+
+* **deps:** update azure/setup-kubectl digest to bda439f ([#235](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/235)) ([d389a1f](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/d389a1fbe2e471b5b8dd21f1bd1c22ec84dcb8b2))
+* **deps:** update pre-commit hook antonbabenko/pre-commit-terraform to v1.109.2 ([#233](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/233)) ([b9651e2](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/b9651e2604b7763b0c9e830d5ef3774571bf1a03))
+* **deps:** update pre-commit hook renovatebot/pre-commit-hooks to v44.131.0 ([#234](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/234)) ([42a74f0](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/42a74f01c1a3369f913e958434b22a838d07bed9))
+* **deps:** update terraform-linters/setup-tflint action to v6.3.2 ([#231](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/231)) ([841f093](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/841f093ef2ca20b243475f55f47176c674192c88))
+
 ## [2.18.12](https://github.com/opzkit/terraform-aws-k8s-addons-keda/compare/v2.18.11...v2.18.12) (2026-09-24)
 
 
