@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.18.14](https://github.com/opzkit/terraform-aws-k8s-addons-keda/compare/v2.18.13...v2.18.14) (2026-11-21)
+
+
+### Miscellaneous Chores
+
+* **deps:** update actions/create-github-app-token digest to f418cff ([#250](https://github.com/opzkit/terraform-aws-k8s-addons-keda/issues/250)) ([e9c3ad3](https://github.com/opzkit/terraform-aws-k8s-addons-keda/commit/e9c3ad3b196608c2a1912501eb1cd07c4454f5ae))
+
 ## [2.18.13](https://github.com/opzkit/terraform-aws-k8s-addons-keda/compare/v2.18.12...v2.18.13) (2026-11-17)
 
 
